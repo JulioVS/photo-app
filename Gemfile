@@ -76,3 +76,9 @@ group :production do
   gem "pg"
   gem "rails_12factor"
 end
+
+gem "devise", "~> 4.9"
+gem 'devise-bootstrap-views', '~> 1.0'
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
