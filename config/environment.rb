@@ -4,6 +4,7 @@ require_relative "application"
 # Initialize the Rails application.
 Rails.application.initialize!
 
+# Udemy Rails: Mailgun (mailing add-on for Heroku) configuration
 ActionMailer::Base.smtp_settings = {
   :port           => ENV['MAILGUN_SMTP_PORT'],
   :address        => ENV['MAILGUN_SMTP_SERVER'],
