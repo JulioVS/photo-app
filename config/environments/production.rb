@@ -13,6 +13,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # Udemy Rails: Set ActionMailer
+  #   VERIFICADO! FUNCIONA EN PRODUCCION! 19.12.23
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { :host => 'https://photo-app-je-d9cfce362fe9.herokuapp.com' }
 

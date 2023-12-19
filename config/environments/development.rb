@@ -12,6 +12,7 @@ Rails.application.configure do
   config.eager_load = false
 
   # Udemy Rails: Set ActionMailer
+  #   VERIFICADO! FUNCIONA EN DESARROLLO! 19.12.23
   config.action_mailer.delivery_method = :test
   config.action_mailer.default_url_options = { :host => 'http://localhost:3000' }
 
