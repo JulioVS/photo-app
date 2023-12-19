@@ -6,7 +6,7 @@ Rails.application.initialize!
 
 # Udemy Rails:  Mailgun (add-on de mailing para Heroku), configuracion inicial.-
 #               Las variables de entorno las cargó el instalador de Mailgun directo en Heroku.-
-#               La URL es la del deply de esta app en Heroku (produccion).-
+#               La URL es la del deploy de esta app en Heroku (produccion).-
 ActionMailer::Base.smtp_settings = {
   :port           => ENV['MAILGUN_SMTP_PORT'],
   :address        => ENV['MAILGUN_SMTP_SERVER'],
@@ -15,4 +15,4 @@ ActionMailer::Base.smtp_settings = {
   :domain         => 'photo-app-je-d9cfce362fe9.herokuapp.com',
   :authentication => :plain,
 }
-ActionMailer::Base.delivery_method = :smtp
+# ActionMailer::Base.delivery_method = :smtp
