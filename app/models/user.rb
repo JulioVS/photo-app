@@ -4,8 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :validatable
 
-  # Realacion de Usuarios y Pagos (en realidad, solo puede tener 0 o 1 pago)
+  # Relación entre Usuarios y Pagos (en realidad, un usuario solo puede tener uno o ningún pago)
   has_one :payment
-  # Esto es porque el formulario de pago va a tener embebidos datos del usuario tambien
+  
+  # Esto es porque el formulario de usuarios va a tener embebido datos del pago tambien
   accepts_nested_attributes_for :payment
 end
