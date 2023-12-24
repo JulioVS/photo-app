@@ -9,4 +9,6 @@ class User < ApplicationRecord
   
   # Esto es porque el formulario de usuarios va a tener embebido datos del pago tambien
   accepts_nested_attributes_for :payment
+
+  has_many :images 
 end
